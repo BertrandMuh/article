@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: lightgray;
+    padding-bottom: 10px;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 12% 7% auto 8%;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    gap: 10px
+}
+
+.title,
+.navbar,
+footer {
+    grid-column: 2 span;
+    display: flex;
+    align-items: center;
+}
+
+.title,
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 15px
+}
+
+h3 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar,
+.aside {
+    background: rgb(236, 130, 232);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5%;
+
+    width: 25%;
+}
+
+form>* {
+    height: 25px;
+}
+
+input {
+    width: 100%;
+    padding-left: 2px;
+    border: 0;
+    outline: none;
+}
+
+button {
+    width: 90px;
+    color: white;
+    background: rgb(66, 64, 64);
+    border: 0
+}
+
+.main,
+footer {
+    background: white;
+    padding: 0 10px;
+}
+
+.aside {
+    padding: 0 10px;
+}
+
+.aside>ul {
+    width: 70%;
+    margin-left: auto;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+@media(max-width:812px) {
+    #body {
+        grid-template-rows: 6vw 5vw auto 5%;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        height: 4vw;
+    }
+
+    h3 {
+        font-size: 3.7vw;
+    }
+
+    p {
+        font-size: 3.4vw;
+    }
+
+    .navbar>a {
+        font-size: 2.5vw;
+    }
+
+    .aside>ul {
+        font-size: 2.5vw;
+    }
+
+    form {
+        display: none;
+    }
+}
