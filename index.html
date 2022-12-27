@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js"></script>
     <title>Article</title>
 </head>
@@ -13,16 +14,19 @@
 <body>
     <aricle id="body">
         <h1 class="title">Header</h1>
-        <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="#">our team</a>
-            <a href="#">projects</a>
-            <a href="#">contact</a>
-            <form action="#" method="get">
-                <input type="text" placeholder="Search query">
+        <div class="nav">
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="#">our team</a>
+                <a href="#">projects</a>
+                <a href="#">contact</a>
+                <i onclick="displayForm()" class="fa fa-search"></i>
+            </nav>
+            <form id="form" action="#" method="get">
+                <input type="search" placeholder="Search query">
                 <button type="submit">Go!</button>
             </form>
-        </nav>
+        </div>
         <article class="main">
             <section>
                 <h2>Article Heading</h2>
